@@ -1,0 +1,8 @@
+services:
+  manual-ingestion:
+    build: .
+    env_file:
+      - .env
+    volumes:
+      - ./:/workspace:ro
+    working_dir: /workspace
